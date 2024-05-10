@@ -1,8 +1,11 @@
 {
   "name": "@mockingbirdz/simple-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "simpleState.js",
+  "module": "simpleState.js",
+  "exports": "./simpleState.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
