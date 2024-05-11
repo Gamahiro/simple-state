@@ -30,7 +30,7 @@ class EventEmitter {
     }
 }
 
-type StateType<T> =  {state: () => T, updateState: (newState: T | Partial<T>) => void, EventEmitter: EventEmitter};
+export type StateType<T> =  {state: () => T, updateState: (newState: T | Partial<T>) => void, EventEmitter: EventEmitter};
 
 const createState =<T,> (initialState: T, eventEmitter?: EventEmitter): StateType<T> => {
     let state = initialState;

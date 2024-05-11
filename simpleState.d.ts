@@ -6,7 +6,7 @@ declare class EventEmitter {
     removeEvent(eventName: string, handler: EventHandler): void;
     dispatch(eventName: string, ...args: any[]): void;
 }
-type StateType<T> = {
+export type StateType<T> = {
     state: () => T;
     updateState: (newState: T | Partial<T>) => void;
     EventEmitter: EventEmitter;
